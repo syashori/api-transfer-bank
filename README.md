@@ -27,6 +27,8 @@ php artisan db:seed
 
 ###########################################################
 
-gunakan credential 
-email : user@boscod.com
+php artisan serve
+
+gunakan credential <br />
+email : user@boscod.com <br />
 password : password
