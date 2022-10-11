@@ -3,7 +3,9 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\User;
+use Database\Seeders\UserSeeder;
+use Database\Seeders\BankSeeder;
+use Database\Seeders\RekeningAdminSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -12,8 +14,12 @@ class DatabaseSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
-    {
-        User::factory(10)->create();
+    public function run(){
+        $this->call([
+            BankSeeder::class,
+            RekeningAdminSeeder::class,
+            UserSeeder::class,
+        ]);
+        
     }
 }
