@@ -1,5 +1,6 @@
-## How to Clone and Run Project
+minimal API for record transfer using laravel and mysql database
 
+## How to Clone and Run Project
 
 git clone https://github.com/syashori/api-transfer-bank
 
